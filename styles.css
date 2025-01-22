@@ -1,0 +1,112 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9eff1; /* Softer background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Default text color */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s; /* Subtle animation on hover */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 2.5em; /* Increased font size */
+  margin-bottom: 25px;
+  font-weight: 600; /* Bolder font weight */
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 25px; /* Increased spacing */
+}
+
+label {
+  font-size: 1.1em; /* Slightly larger font size */
+  margin-bottom: 10px;
+  display: block;
+  color: #555; /* Darker label color */
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px; /* Increased padding for comfort */
+  margin-top: 8px;
+  border-radius: 10px; /* More rounded corners */
+  border: 1px solid #ccc; /* Softer border color */
+  font-size: 1em;
+  color: #555;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+.input-field:focus {
+  border-color: #4CAF50;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Dynamic Subject Input Styles */
+.subject {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-bottom: 20px;
+}
+
+.subject label {
+  align-self: center;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 10px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 1.2em; /* Slightly larger font size */
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.result {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5em; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .subject {
+      grid-template-columns: 1fr; /* Stack inputs on smaller screens */
+  }
+}
